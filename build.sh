@@ -1,0 +1,1 @@
+gcc -o main main.c -Wall -Wextra -Wconversion -Wpedantic --std=c99
