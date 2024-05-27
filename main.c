@@ -61,6 +61,15 @@ int main() {
         printf("\nEnter second number: ");
         scanf("%u", &second_number);
         printf("\nSecond_number: %u\n", second_number);
+
+        uint32_t gcd = (first_number < second_number) ? first_number :second_number;
+
+        for(; gcd >= 1; gcd--) {
+            if(first_number % gcd == 0 && second_number % gcd == 0)
+            break;
+        }
+
+        printf("\nGCD(%u, %u) = %u", first_number, second_number, gcd);
     }
     return 0;
 }
